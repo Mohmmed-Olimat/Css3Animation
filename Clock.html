@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css3-5</title>
+	<style type="text/css">
+
+		.t{
+			height: 15px;
+			width: 15px;
+			border: 10px solid;
+			border-color: red;
+			border-radius: 50%;
+			text-align: center;
+			margin-top: 100px;
+			margin-left: 165px;
+			padding-bottom: 0px;
+
+		}
+
+		.c {
+			height: 150px;
+			width: 150px;
+			border: 10px solid;
+			border-color: red;
+			border-radius: 50%;
+			text-align: center;
+			margin:100px;
+			margin-top: 0px;
+
+
+
+		}
+
+		p{
+			background-color: blue;
+			height: 60px;
+			width: 5px;
+			margin:20px auto 0px auto;
+			animation-name: clock;
+			animation-duration: 1s;
+			transform-origin: bottom center;
+			animation-iteration-count: infinite;
+
+		}
+
+		@keyframes clock 
+		{
+			from { transform: rotate(0deg); }
+			to 	 { transform: rotate(360deg); }
+
+
+
+
+		}
+
+		.c:hover p{
+			animation-play-state: paused;
+
+
+		}
+	
+
+
+	</style>
+</head>
+<body>
+
+<h1>Hover To Stop</h1>
+<div class="t"></div>
+	<div class="c">
+	<p></p>
+
+	</div>
+
+
+</body>
+</html>

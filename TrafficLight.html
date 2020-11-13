@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css3-2</title>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	
+	<style type="text/css">
+
+		.center{
+			margin : 200px;
+		}
+
+
+		.trafficlights {
+			padding: 10px 50px;
+			background: #333;
+			border-radius: 35px;
+			border: 15px solid #111;
+			width: 150px;
+
+		}
+
+		.light {
+
+			border-radius: 50%;
+			background: #ccc;
+			width: 100px;
+			height: 100px;
+			margin: 20px auto;
+
+		}
+
+		.line{
+			padding-left: 20px;
+			background: #333;
+			border: 15px solid #111;
+			margin: 100px;
+			margin-top: 0px;
+			width: 30px;
+			height: 150px;
+		}
+
+
+
+		@keyframes red {
+			0% {
+				background: #111;
+			}
+			2%,
+			40% {
+				background: red;
+			}
+			42%,
+			100% {
+				background: #111;
+			}
+		}
+
+		@keyframes orange {
+			0%,
+			20% {
+				background: #111;
+			}
+			22%,
+			40% {
+				background: orange;
+			}
+			42%,
+			80% {
+				background: #111;
+			}
+			82%,
+			100% {
+				background: orange;
+			}
+		}
+
+		@keyframes green {
+			0%,
+			40% {
+				background: #111;
+			}
+			42%,
+			80% {
+				background: green;
+			}
+			82%,
+			100% {
+				background: #111;
+			}
+		}
+
+		.red {
+			animation: red 5s linear infinite;
+		}
+
+		.orange {
+			animation: orange 5s linear infinite;
+		}
+
+		.green {
+			animation: green 5s linear infinite;
+		}
+		.fa{
+			padding-left: 15px;
+			padding-top: 5px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="center">
+		<div class="trafficlights">
+			<div class="light red"></div>
+			<div class="light orange"></div>
+			<div class="light green"></div>
+		</div>
+		<div class="line"></div>
+	</div>
+
+<div class="center">
+		<div class="trafficlights">
+			<div class="light red"><i class="fa fa-hand-paper-o fa-5x" aria-hidden="true"></i></div>
+			
+			<div class="light green"><i class="fa fa-male fa-5x" aria-hidden="true"></i></div>
+		</div>
+		<div class="line"></div>
+	</div>
+
+</body>
+</html>
